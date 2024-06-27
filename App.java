@@ -32,13 +32,36 @@ public class App {
         // System.out.println("Valor de la variable datoLogico: " + datoLogico);
 
         // Args
-        if (args.length > 0) {
-            System.out.println("Parámetros pasados desde la línea de comandos:");
+        // if (args.length > 0) {
+        //     System.out.println("Parámetros pasados desde la línea de comandos:");
+
+
+        //     for (int i = 0; i < args.length; i++) {
+
+        //         System.out.println("Parámetro " + (i + 1) + ": " + args[i]);
+
+        //     }
+
+
+        // } else {
+        //     System.out.println("No se pasó ningún parámetro desde la línea de comandos.");
+        // }
+
+        int[] intArgs = new int[args.length];
+
+        try {
             for (int i = 0; i < args.length; i++) {
-                System.out.println("Parámetro " + (i + 1) + ": " + args[i]);
+                intArgs[i] = Integer.parseInt(args[i]);
             }
-        } else {
-            System.out.println("No se pasó ningún parámetro desde la línea de comandos.");
+        } catch (NumberFormatException e) {
+            System.out.println("Uno de los argumentos no es un número entero válido.");
+            return;
+        }
+
+        // Ahora puedes trabajar con el arreglo de enteros
+        System.out.println("Argumentos como enteros:");
+        for (int i : intArgs) {
+            System.out.println(i);
         }
 
     }
