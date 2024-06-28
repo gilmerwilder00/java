@@ -113,7 +113,7 @@ public class Operations {
         // System.out.println();
         // System.out.println("El perímetro del rectángulo es : " + perimetroRectangulo + " cm.");
         // System.out.println("El área del rectángulo es : " + areaRectangulo + " cm2.");
-        // System.out.println();
+        // System.out.println();S
 
 
         myScanner.close();

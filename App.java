@@ -46,6 +46,26 @@ public class App {
         // } else {
         //     System.out.println("No se pasó ningún parámetro desde la línea de comandos.");
         // }
+        // int operacion = 0;
+
+        // if(args.length>0){
+
+        //     System.out.println();
+        //     System.out.println("Argumentos ingresados desde la consola: ");
+
+        //     for( int i = 0 ;  i< args.length ; i++){
+        //         System.out.println("El argumento numero " + (i+1) + " es : " + args[i] );
+        //     }
+            
+        //     System.out.println();
+        //     System.out.println(operacion);
+
+        // }else{
+        //     System.out.println("No se pasaron argumentos desde consola.");
+        //     System.out.println();
+        // }
+
+
 
         int[] intArgs = new int[args.length];
 
@@ -61,7 +81,7 @@ public class App {
         // Ahora puedes trabajar con el arreglo de enteros
         System.out.println("Argumentos como enteros:");
         for (int i : intArgs) {
-            System.out.println(i);
+            System.out.println(2*i);
         }
 
     }
