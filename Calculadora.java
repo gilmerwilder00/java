@@ -49,12 +49,14 @@ public class Calculadora {
                     System.out.println("La resta de " + numero1 + " y " + numero2 + " es : " + (numero1 - numero2));
                     break;
                 case 3:
-                    System.out.println(
-                            "La multiplicación de " + numero1 + " y " + numero2 + " es : " + (numero1 * numero2));
+                    System.out.println("La multiplicación de " + numero1 + " y " + numero2 + " es : " + (numero1 * numero2));
                     break;
                 case 4:
-                    System.out.println(
-                            "La multiplicación de " + numero1 + " y " + numero2 + " es : " + (numero1 * numero2));
+                    if(numero2!=0){
+                    System.out.println("La división de " + numero1 + " y " + numero2 + " es : " + (numero1 * numero2));
+                    }else{
+                        System.out.println("No se puede dividir un número entre 0");
+                    }
                     break;
 
                 default:
