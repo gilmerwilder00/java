@@ -2,9 +2,29 @@ import java.util.Scanner;
 
 public class DiasDeSemana {
     public static void main(String[] args) {
+
         Scanner myScanner = new Scanner(System.in);
-        System.out.println("Ingrese un número entero del 1 al 7:");
-        int dia = myScanner.nextInt();
+
+        int dia=0;
+
+        boolean validInput = false;
+        
+        // System.out.println();
+        // System.out.print("Ingrese un número entero del 1 al 7:");    
+        // dia = myScanner.nextInt();
+        // System.out.println();
+
+        while (!validInput) {
+            System.out.print("Ingrese un número entero del 1 al 7:");
+            if (myScanner.hasNextInt()) {
+                dia = myScanner.nextInt();
+                validInput = true;
+            } else {
+                System.out.println("Entrada inválida. Por favor, ingrese un número entero.");
+                myScanner.next(); // consumir y descartar la entrada no válida.
+            }
+        }
+        
 
         switch (dia) {
             case 1:
@@ -32,6 +52,8 @@ public class DiasDeSemana {
                 System.out.println("Numero ingresado incorrecto.");
                 break;
         }
+
+        System.out.println();
 
         myScanner.close();
     }    
