@@ -10,7 +10,7 @@ public class Cadenas {
         // longitudDeCadena(myScanner);
 
         // Activiad 2
-        // concatenacionDeCadenas(myScanner);
+        concatenacionDeCadenas(myScanner);
 
         //Actividad 3
         // extraccionDeSubcadena(myScanner);
@@ -52,6 +52,9 @@ public class Cadenas {
 
         // nombreCompleto = nombre.concat(apellidos);
         nombreCompleto = nombre.concat(" ").concat(apellidos);
+
+        nombreCompleto = nombreCompleto + 5 ;
+
 
 // 
         System.out.println("Su nombre completo es: " + nombreCompleto);
