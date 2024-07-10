@@ -5,13 +5,13 @@ public class CadenasComplementario {
         Scanner myScanner = new Scanner(System.in);
 
         // Actividad 1
-        // remplazoDeCaracteres(myScanner);
+        remplazoDeCaracteres(myScanner);
 
         // Actividad 2
-        // eliminacionEspacioEnBlanco(myScanner);
+        eliminacionEspacioEnBlanco(myScanner);
 
         // Actividad 3
-        // comparacionDeCadenas(myScanner);
+        comparacionDeCadenas(myScanner);
 
         // Actidada 4
         calcularLongitudSinEspacios(myScanner);

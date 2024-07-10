@@ -8,7 +8,7 @@ public class ActividadIntegradora {
         Scanner myScanner = new Scanner(System.in);
 
         // Desafio 1
-        // conversionUnidadesTemperatura(myScanner);
+        conversionUnidadesTemperatura(myScanner);
 
         // Desafio 2
         validacionDeContraseña(myScanner);

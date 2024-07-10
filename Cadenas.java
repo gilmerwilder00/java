@@ -7,19 +7,19 @@ public class Cadenas {
         Scanner myScanner = new Scanner(System.in);
 
         // Actividad 1
-        // longitudDeCadena(myScanner);
+        longitudDeCadena(myScanner);
 
         // Activiad 2
         concatenacionDeCadenas(myScanner);
 
         //Actividad 3
-        // extraccionDeSubcadena(myScanner);
+        extraccionDeSubcadena(myScanner);
 
         //Actividad 4
-        // busquedaDeCaracteres(myScanner);
+        busquedaDeCaracteres(myScanner);
 
         // Actividad 5
-        // mayusculasYMinusculas(myScanner);
+        mayusculasYMinusculas(myScanner);
 
         myScanner.close();
     }
