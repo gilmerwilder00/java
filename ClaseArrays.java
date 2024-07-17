@@ -6,10 +6,10 @@ public class ClaseArrays {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
 
-        // ordenandoNumeros();
-        // busquedaBinaria(myScanner);
-        // comparandoArreglos();
-        // copiandoParteDeUnArreglo(myScanner);
+        ordenandoNumeros();
+        busquedaBinaria(myScanner);
+        comparandoArreglos();
+        copiandoParteDeUnArreglo(myScanner);
         rellenadoUnArreglo(myScanner);
 
         myScanner.close();
