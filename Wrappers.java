@@ -10,11 +10,11 @@ public class Wrappers {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
 
-        // verificandoCadenaEsNumero(myScanner);
-        // conversionCadenaANumero(myScanner);
-        // verificandoCadena(myScanner);
-        // verificandoEspaciosEnCadena(myScanner);
-        // sumaDeNumeros(myScanner);
+        verificandoCadenaEsNumero(myScanner);
+        conversionCadenaANumero(myScanner);
+        verificandoCadena(myScanner);
+        verificandoEspaciosEnCadena(myScanner);
+        sumaDeNumeros(myScanner);
         contandoDigitosDeUnNumero(myScanner);
 
         myScanner.close();
@@ -179,7 +179,7 @@ public class Wrappers {
         try {
             System.out.print("Ingresa un numero entero:");
             number = myScanner.nextInt();
-            
+
             numeroCadena = Integer.toString(number);
 
             for (int i = 0; i < numeroCadena.length(); i++) {
