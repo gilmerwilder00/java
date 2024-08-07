@@ -2,13 +2,13 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class DesafiosII {
+public class ActividadIntegradoraIII {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
         generandoContraseña(myScanner);
-        // estadisticasDeCalificaciones(myScanner);
-        // fibonacci(myScanner);
-        // numerosPrimos(myScanner);
+        estadisticasDeCalificaciones(myScanner);
+        fibonacci(myScanner);
+        numerosPrimos(myScanner);
         myScanner.close();
     }
 
