@@ -5,9 +5,9 @@ public class ActividadIntegradoraIV {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
 
-        // calculoDeFactorial(myScanner);
-        // fibonacciMejorada(myScanner);
-        // primosPlus(myScanner);
+        calculoDeFactorial(myScanner);
+        fibonacciMejorada(myScanner);
+        primosPlus(myScanner);
         dibujandoCuadrados(myScanner);
 
         myScanner.close();
