@@ -12,22 +12,22 @@ public class Metodos2 {
     public static void main(String[] args) {
 
         // Actividad 1: Es par
-        // actividad1();
+        actividad1();
 
         // Actividad 2: Calculadora
-        // actividad2();
+        actividad2();
 
         // Actividad 3 : Ejercicio de calificación
-        // actividad3();
+        actividad3();
 
         // Actividad 4 : Imprimir Arrays-sobrecarga
-        // actividad4();
+        actividad4();
 
         // Actividad 5 : Generacion de números aleatoreos
-        // actividad5();
+        actividad5();
 
         // Actividad 6 : Verificación de contraseña
-        // actividad6();
+        actividad6();
 
         // Actividad 7: Adivinando Numero
         actividad7();
