@@ -6,13 +6,13 @@ public class Metodos3 {
 
     public static void main(String[] args) {
         // Actividad 1: fibonacci recursivo;
-        // fibonacciMejorada();
+        fibonacciMejorada();
 
         // Actividad 2: Factorial recursivo
-        // calculoDeFactorial();
+        calculoDeFactorial();
 
         // Actividad 3: Números primos recursivo
-        // numerosPrimos();
+        numerosPrimos();
 
         // Ejercicio complementario
         adivinarPalabra();
@@ -246,16 +246,17 @@ public class Metodos3 {
 
     public static void adivinarPalabra() {
         // Seleccionar una palabra aleatoria
-        String palabraSecreta = seleccionarPalabra();
+        String palabraSecreta = seleccionarPalabra();//hoy
         int intentosRestantes = 5;
-        char[] pista = generarPista(palabraSecreta.length());
+        char[] pista = generarPista(palabraSecreta.length()); 
 
+                                        // hoy.equals("hoy") -> [_,_,_,a,_,_]             
         while (intentosRestantes > 0 && !palabraSecreta.equals(String.valueOf(pista))) {
             System.out.println();
             System.out.println("Pista: " + String.valueOf(pista));
             System.out.println("Intentos restantes: " + intentosRestantes);
             System.out.print("Ingresa una letra: ");
-            char letra = myScanner.nextLine().charAt(0);
+            char letra = myScanner.nextLine().charAt(0);// alo -> a
 
             // Comprobar si la letra está en la palabra
             if (verificarLetra(palabraSecreta, pista, letra)) {
@@ -281,7 +282,7 @@ public class Metodos3 {
     }
 
     public static char[] generarPista(int longitud) {
-        char[] pista = new char[longitud];
+        char[] pista = new char[longitud];// [ _ , _ , _ ] ---> ref
         for (int i = 0; i < longitud; i++) {
             pista[i] = '_';
         }
@@ -291,8 +292,8 @@ public class Metodos3 {
     private static boolean verificarLetra(String palabraSecreta, char[] pista, char letra) {
         boolean acierto = false;
         for (int i = 0; i < palabraSecreta.length(); i++) {
-            if (palabraSecreta.charAt(i) == letra) {
-                pista[i] = letra;
+            if (palabraSecreta.charAt(i) == letra) {// tareas
+                pista[i] = letra; // [_,_,_,a,_,_]
                 acierto = true;
             }
         }
